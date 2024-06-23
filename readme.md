@@ -28,6 +28,7 @@ Crud Automatique :
 
 php bin/console make:crud
 
+
 Installer les fixtures :
 
 - composer require --dev orm-fixtures
