@@ -1,7 +1,7 @@
 Ce projet Symfony s'inscrit dans la validation du module Symfony. 
 J'ai fais le choix de réaliser une app de festival de cinéma dans l'agglomération lyonnaise. 
 
-I. Installation du projet 
+Installation du projet 
 
 Installer le projet avec Composer :
 
@@ -24,24 +24,9 @@ Lancez les commandes :
 php bin/console doctrine:database:create
 php bin/console doctrine:migrations:migrate
 
-Installer un server local SMTP pour pouvoir recevoir les mails envoyés par Symfony.
+Crud Automatique : 
 
-Pour Windows 📠
-Assurez-vous d'avoir installé Docker sur votre machine.
-
-Lancez cette commande sur votre terminal :
-
-docker run -d --name=mailtrap -p 8025:80 -p 1025:25 eaudeweb/mailtrap
-Lancez le docker avec :
-
-docker start mailtrap
-Rendez-vous sur l'interface utilisateur 127.0.0.1:8025 pour pouvoir se connecter avec les informations suivantes :
-
-Identifiant : mailtrap
-Mot de passe : mailtrap
-Ajoutez dans le fichier .env.local la configuration du Mailer :
-
-MAILER_DSN=smtp://127.0.0.1:1025
+php bin/console make:crud
 
 Installer les fixtures :
 
@@ -50,3 +35,12 @@ Installer les fixtures :
 php bin/console doctrine:fixtures:load
 
 Faker : utilisation de donées aleatoires
+
+EasyAdmin : 
+
+- composer require easycorp/easyadmin-bundle
+
+Pour la création du DashBoard : 
+
+- php bin/console make:admin:dashboard
+- php bin/console make:admin:crud

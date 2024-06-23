@@ -4,4 +4,89 @@
 
 {% block body %}
 
+    <style>
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Actualités - Festival de Films</h1>
+        <div class="row">
+            <!-- Article 1 -->
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="{{ asset('/images/actu.png') }}" class="card-img-top" alt="Article 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Article 1: Nouveau Film Annoncé</h5>
+                        <p class="card-text">Un nouveau film vient d'être annoncé pour le festival. Découvrez tous les détails ici.</p>
+                        <a href="article1.html" class="btn btn-primary">Lire plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Article 2 -->
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="{{ asset('/images/actu.png') }}" class="card-img-top" alt="Article 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Article 2: Interview avec le Réalisateur</h5>
+                        <p class="card-text">Nous avons interviewé le réalisateur du film "Les Rivières Pourpres". Lisez l'interview complète ici.</p>
+                        <a href="article2.html" class="btn btn-primary">Lire plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Article 3 -->
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="{{ asset('/images/actu.png') }}" class="card-img-top" alt="Article 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Article 3: Retour sur la Première Journée</h5>
+                        <p class="card-text">Revivez les moments forts de la première journée du festival de films.</p>
+                        <a href="article3.html" class="btn btn-primary">Lire plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Article 4 -->
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="{{ asset('/images/actu.png') }}" class="card-img-top" alt="Article 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Article 4: Les Films à Ne Pas Manquer</h5>
+                        <p class="card-text">Voici une liste des films à ne surtout pas manquer lors du festival.</p>
+                        <a href="article4.html" class="btn btn-primary">Lire plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Article 5 -->
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="{{ asset('/images/actu.png') }}" class="card-img-top" alt="Article 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Article 5: Table Ronde sur le Cinéma</h5>
+                        <p class="card-text">Une table ronde sur l'avenir du cinéma s'est tenue hier. Voici ce qu'il faut retenir.</p>
+                        <a href="article5.html" class="btn btn-primary">Lire plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Article 6 -->
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="{{ asset('/images/actu.png') }}"  class="card-img-top" alt="Article 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Article 6: Les Stars du Festival</h5>
+                        <p class="card-text">Découvrez quelles stars du cinéma seront présentes au festival cette année.</p>
+                        <a href="article6.html" class="btn btn-primary">Lire plus</a>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+   
+</html>
+
+
 {% endblock %}
