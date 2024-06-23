@@ -1,0 +1,97 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Films à l'affiche{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+    <style>
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Liste des films - Lyon </h1>
+        <div class="row">
+            <!-- Film 1 -->
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="{{ asset('/images/grandvoyage.jpg') }}" class="card-img-top" alt="Le Grand Voyage">
+                    <div class="card-body">
+                        <h5 class="card-title">Film 1: Le Grand Voyage</h5>
+                        <p class="card-text">Lieu: Cinéma Pathé Bellecour</p>
+                        <p class="card-text">Heure: 18:00</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Film 2 -->
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="{{ asset('/images/riviere.jpg') }}" class="card-img-top" alt="Les Rivières Pourpres">
+                    <div class="card-body">
+                        <h5 class="card-title">Film 2: Les Rivières Pourpres</h5>
+                        <p class="card-text">Lieu: Cinéma UGC Part-Dieu</p>
+                        <p class="card-text">Heure: 20:00</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Film 3 -->
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="{{ asset('/images/ameliepoulain.jpg') }}"class="card-img-top" alt="Amélie Poulain">
+                    <div class="card-body">
+                        <h5 class="card-title">Film 3: Amélie Poulain</h5>
+                        <p class="card-text">Lieu: Cinéma Lumière Terreaux</p>
+                        <p class="card-text">Heure: 17:00</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Film 4 -->
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="{{ asset('/images/intouchable.jpg') }}" class="card-img-top" alt="Intouchables">
+                    <div class="card-body">
+                        <h5 class="card-title">Film 4: Intouchables</h5>
+                        <p class="card-text">Lieu: Cinéma Pathé Vaise</p>
+                        <p class="card-text">Heure: 19:00</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Film 5 -->
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="{{ asset('/images/lahaine.jpg') }}" class="card-img-top" alt="La Haine">
+                    <div class="card-body">
+                        <h5 class="card-title">Film 5: La Haine</h5>
+                        <p class="card-text">Lieu: Cinéma UGC Confluence</p>
+                        <p class="card-text">Heure: 21:00</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Film 6 -->
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="{{ asset('/images/choristes.jpg') }}" class="card-img-top" alt="Les Choristes">
+                    <div class="card-body">
+                        <h5 class="card-title">Film 6: Les Choristes</h5>
+                        <p class="card-text">Endroit: Cinéma Lumière Fourmi</p>
+                        <p class="card-text">Heure: 16:00</p>
+                    </div>
+                </div>
+            </div>
+            
+        <br> 
+        <p> Et bien d'autres suprises vous attendent ! <p> 
+        <br>
+
+        </div>
+    </div>
+
+{% endblock %}

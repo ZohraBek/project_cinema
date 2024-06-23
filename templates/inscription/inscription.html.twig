@@ -1,0 +1,65 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Formulaire d'inscription!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+   <div class="container mt-5 content">
+        <h1 class="center-title">Inscription au Festival Cinéma Horizons</h1>
+        <p class="center-title">
+            Remplissez le formulaire ci-dessous pour vous inscrire au <strong>Festival Cinéma Horizons</strong> et participer à une expérience cinématographique unique.
+        </p>
+
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputFirstName">Prénom</label>
+                    <input type="text" class="form-control" id="inputFirstName" placeholder="Prénom">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputLastName">Nom</label>
+                    <input type="text" class="form-control" id="inputLastName" placeholder="Nom">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail">Email</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label for="inputPhone">Téléphone</label>
+                <input type="tel" class="form-control" id="inputPhone" placeholder="Téléphone">
+            </div>
+            <div class="form-group">
+                <label for="inputAddress">Adresse</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Adresse">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">Ville</label>
+                    <input type="text" class="form-control" id="inputCity" placeholder="Ville">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputState">État</label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Choisissez...</option>
+                        <option>France</option>
+                        <option>Espagne</option>
+                        <option>Italie</option>
+                        <option>Belgique</option>
+                        <option>Allemagne</option>
+                        <option>Autres pays</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputZip">Code Postal</label>
+                    <input type="text" class="form-control" id="inputZip" placeholder="Code Postal">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">S'inscrire</button>
+        </form>
+    </div>
+{% endblock %}
